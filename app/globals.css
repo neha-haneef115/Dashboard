@@ -24,3 +24,16 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@layer utilities {
+  .primary-button {
+    @apply bg-[#ffcc33] hover:bg-[#ffd65e] text-black font-medium px-4 py-2 rounded-lg transition-colors;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center space-x-3 px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 cursor-pointer transition-colors rounded-lg mx-2;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-orange-50 text-[#da8700] border-l-4 border-[#da8700];
+  }
+}
